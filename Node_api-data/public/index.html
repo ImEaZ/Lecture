@@ -1,10 +1,13 @@
 <!doctype html>
 <html ng-app="todoApp">
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-    <script src="todo.js"></script>
-  </head>
-  <body ng-controller="TodoListController as todoList">
-    <h2>RestFullapi</h2>
-  </body>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body ng-controller="TodoListController as todoList">
+		<h2>RestFullapi</h2> <br>
+		<form ng-submit = todoList.sub(input)>
+			text : <input type="text" ng-model = "input">
+		</form>
+	</body>
 </html>
